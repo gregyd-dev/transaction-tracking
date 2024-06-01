@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage'; // Import the created component
+import TransactionTracking from './TransactionTracking'; 
 
 function App() {
   return (
     <Router basename="/transaction-tracking">
       <Routes>
-        <Route exact path="/" component={logo} />
-        <Route exact path="/transaction-tracking" component={logo} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/transaction-tracking" element={<TransactionTracking />} />
       </Routes>
     </Router>
   );
