@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage'; // Import the created component
-import TransactionTracking from './TransactionTracking'; 
+import HomePage from './components/HomePage'; // Import the created component
+import TransactionTracking from './components/TransactionTracking'; 
 
 function App() {
   return (
