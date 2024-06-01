@@ -9,12 +9,6 @@ function TransactionTracking() {
     setLoading(true);
     setError(null);
 
-    const payload = {
-      // Your payload data here
-      key1: 'value1',
-      key2: 'value2'
-    };
-
     try {
       const response = await fetch('https://api.up.com.au/api/v1/transactions', {
         method: 'GET', // Use POST method
@@ -39,7 +33,7 @@ function TransactionTracking() {
 
   return (
     <div>
-      <div>Hoi scobie! Press the button to see dscregorie's latest transaction on Up:</div>
+      <div>Hoi scobie! Press the button to see scregorie's latest transaction on Up:</div>
       <button type="button" onClick={handleButtonClick}>Button</button>
       {loading && <div>Loading...</div>}
       {error && <div>Error: {error}</div>}
